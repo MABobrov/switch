@@ -9,67 +9,62 @@ int main() {
     else printf("Ошибка, попробуйте еще раз\n");}
     //printf("month=");scanf("%i", &month);
     //printf("year" );scanf("%i",&year);
-    if ((day > 31) && (month != 2)){
-        printf("Ошибка, попробуйте еще раз\n");}
-        else
-            switch (month) {
-                case 1: {
-                    if (day >= 20)printf("водолей"); else { printf("козерог"); }
-                }
+if ((day > 31) && (month != 2)){printf("Ошибка, попробуйте еще раз\n");}
+else
+    switch (month) {
+            case 1: {
+                    if (day >= 20)printf("водолей"); 
+                    else{ printf("козерог");}}
                     break;
-                case 2: {
+            case 2: {
                     if (day > 28)printf("в феврале 28 дней");
                     else {
-                        if (day < 19)printf("водолей");
-                        else
-                            printf("рыбы");
-                        }
+                    if (day < 19)printf("водолей");
+                    else printf("рыбы");}}
+                    break;
+            case 3: {
+                    if (day < 21) printf("рыбы"); else printf("овен");
                     }
                     break;
-                    case 3: {
-                        if (day < 21) printf("рыбы"); else printf("овен");
+            case 4: {
+                    if (day < 20)printf("овен"); else printf("телец");
                     }
                     break;
-                    case 4: {
-                        if (day < 20)printf("овен"); else printf("телец");
+            case 5: {
+                    if (day < 21)printf("телец"); else  printf("близнецы");
                     }
                     break;
-                    case 5: {
-                        if (day < 21)printf("телец"); else  printf("близнецы");
+            case 6: {
+                    if (day < 22)printf("близнецы"); else printf("рак");
                     }
                     break;
-                    case 6: {
-                        if (day < 22)printf("близнецы"); else printf("рак");
+            case 7: {
+                    if (day < 23)printf("рак"); else  printf("лев");
                     }
                     break;
-                    case 7: {
-                        if (day < 23)printf("рак"); else  printf("лев");
+            case 8: {
+                    if (day < 22)printf("лев"); else  printf("дева");
                     }
                     break;
-                    case 8: {
-                        if (day < 22)printf("лев"); else  printf("дева");
+            case 9: {
+                    if (day < 23)printf("дева"); else  printf("весы");
                     }
                     break;
-                    case 9: {
-                        if (day < 23)printf("дева"); else  printf("весы");
+            case 10:{
+                    if (day < 24)printf("весы"); else  printf("скорпион");
                     }
                     break;
-                    case 10: {
-                        if (day < 24)printf("весы"); else  printf("скорпион");
+            case 11:{
+                    if (day < 23)printf("скорпион"); else  printf("стрелец");
                     }
                     break;
-                    case 11: {
-                        if (day < 23)printf("скорпион"); else  printf("стрелец");
+            case 12:{
+                    if (day < 22)printf("стрелец"); else  printf("козерог");
                     }
                     break;
-                    case 12: {
-                        if (day < 22)printf("стрелец"); else  printf("козерог");
+            default:{
+                    printf("такого месяца нет!");
                     }
-                    break;
-
-                    default: {
-                        printf("такого месяца нет!");
-                    }
-                }
-    return 0;
             }
+    return 0;
+ }
