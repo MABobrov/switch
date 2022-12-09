@@ -1,17 +1,15 @@
 #include<stdio.h>
 
 int main() {
-    int day = 0, month = 0;
-    for (;;){
-        printf("введите день и месяц в формате ДД М ");
-    scanf("%i %i", &day, &month);
-    if ((day != 0) && (month != 0))break;
-    else printf("Ошибка, попробуйте еще раз\n");}
-    //printf("month=");scanf("%i", &month);
-    //printf("year" );scanf("%i",&year);
-if ((day > 31) && (month != 2)){printf("Ошибка, попробуйте еще раз\n");}
-else
-    switch (month) {
+    int day, month;
+    printf("введите Месяц рождения ");
+    scanf("%i", &month);
+    printf("Введите день рождения ");
+    scanf("%i", &day);
+
+if ((day > 31) && (month != 2)){printf("Ошибка, попробуйте еще раз");}
+    else
+        switch (month) {
             case 1: {
                     if (day >= 20)printf("водолей"); 
                     else{ printf("козерог");}}
